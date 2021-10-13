@@ -12,8 +12,15 @@ public class Application {
 
     public static void main(String[] args) {
         SpringApplication app = new SpringApplication(Application.class);
-        logger.info(System.getProperty("server.port"));
         app.run(args);
+        logRun(args);
+    }
+
+    private static void logRun(String[] args) {
+        logger.info("After SpringApplication.run()");
+        for (String arg : args) {
+            logger.info(args[0]);
+        }
     }
 
 }
