@@ -1,0 +1,21 @@
+version: '3.3'
+
+services:
+  a1:
+    container_name: a1_ct
+    image: ss-web-app
+    ports:
+      - "8081:8080"
+
+  a2:
+    container_name: a2_ct
+    image: ss-web-app
+    ports:
+      - "8082:8080"
+
+  a3:
+    container_name: a3_ct
+    image: ss-web-app
+    ports:
+      - "8083:8080"
+

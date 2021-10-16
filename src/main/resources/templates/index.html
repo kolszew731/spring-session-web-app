@@ -17,16 +17,16 @@
 <div>
     <h2>Local session context</h2>
     <div th:text="${llMessagesCl}"></div>
-    <ul th:each="message : ${llMessages}">
-        <li th:text="${message}">msg</li>
+    <ul>
+        <li th:each="message : ${llMessages}" th:text="${message}">msg</li>
     </ul>
     <br/>
     <br/>
 
     <h2>Clustered session context</h2>
     <div th:text="${clMessagesCl}"></div>
-    <ul th:each="message : ${clMessages}">
-        <li th:text="${message}">msg</li>
+    <ul>
+        <li th:each="message : ${clMessages}" th:text="${message}">msg</li>
     </ul>
     <br/>
     <br/>
